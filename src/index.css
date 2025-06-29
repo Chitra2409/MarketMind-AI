@@ -1,0 +1,681 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom slider styles */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Compact mode styles */
+.compact-mode .space-y-8 > * + * {
+  margin-top: 1.5rem !important;
+}
+
+.compact-mode .space-y-6 > * + * {
+  margin-top: 1rem !important;
+}
+
+.compact-mode .space-y-4 > * + * {
+  margin-top: 0.75rem !important;
+}
+
+.compact-mode .p-6 {
+  padding: 1rem !important;
+}
+
+.compact-mode .p-4 {
+  padding: 0.75rem !important;
+}
+
+/* Base light theme styles (default) */
+:root {
+  --animation-duration: 0.2s;
+}
+
+* {
+  transition-duration: var(--animation-duration);
+}
+
+/* Light theme base colors */
+body {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Text colors for light theme */
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.text-gray-400 {
+  color: #9ca3af !important;
+}
+
+/* Background colors for light theme */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6 !important;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb !important;
+}
+
+/* Border colors for light theme */
+.border-gray-200 {
+  border-color: #e5e7eb !important;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db !important;
+}
+
+/* Insight card specific light theme styles */
+.bg-blue-50 {
+  background-color: #eff6ff !important;
+}
+
+.bg-orange-50 {
+  background-color: #fff7ed !important;
+}
+
+.bg-green-50 {
+  background-color: #f0fdf4 !important;
+}
+
+.bg-yellow-50 {
+  background-color: #fefce8 !important;
+}
+
+.bg-purple-50 {
+  background-color: #faf5ff !important;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe !important;
+}
+
+.border-orange-200 {
+  border-color: #fed7aa !important;
+}
+
+.border-green-200 {
+  border-color: #bbf7d0 !important;
+}
+
+.border-yellow-200 {
+  border-color: #fde68a !important;
+}
+
+.border-purple-200 {
+  border-color: #e9d5ff !important;
+}
+
+/* Hover states for light theme */
+.hover\:bg-gray-50:hover {
+  background-color: #f9fafb !important;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Input and form elements for light theme */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  background-color: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #111827 !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  background-color: #ffffff !important;
+  border-color: #8b5cf6 !important;
+  color: #111827 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Button hover states for light theme */
+.hover\:text-gray-600:hover {
+  color: #4b5563 !important;
+}
+
+.hover\:text-gray-700:hover {
+  color: #374151 !important;
+}
+
+.hover\:text-gray-800:hover {
+  color: #1f2937 !important;
+}
+
+/* Chart and visualization elements for light theme */
+.recharts-cartesian-grid line {
+  stroke: #f0f0f0 !important;
+}
+
+.recharts-text {
+  fill: #6b7280 !important;
+}
+
+/* Insight cards for light theme */
+.insight-card {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+.insight-card .bg-white {
+  background-color: #ffffff !important;
+}
+
+.insight-card .text-gray-700 {
+  color: #374151 !important;
+}
+
+.insight-card .text-gray-900 {
+  color: #111827 !important;
+}
+
+/* Tag and badge styles for light theme */
+.bg-white.bg-opacity-80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-white.bg-opacity-60 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Scrollbar styling for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Enhanced text visibility for specific components */
+.query-stats .text-gray-500,
+.query-stats .text-gray-600 {
+  color: #4b5563 !important;
+  font-weight: 500;
+}
+
+/* Stats cards text improvements */
+.stats-card h2,
+.stats-card .text-2xl {
+  color: #111827 !important;
+  font-weight: 700;
+}
+
+.stats-card .text-sm {
+  color: #6b7280 !important;
+  font-weight: 500;
+}
+
+/* Modal and overlay improvements */
+.bg-black.bg-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Ensure all text in cards is visible */
+.card-content h3,
+.card-content h4,
+.card-content .font-semibold,
+.card-content .font-medium {
+  color: #111827 !important;
+}
+
+/* Specific fixes for query history and user profile */
+.user-profile-content .text-gray-700,
+.query-history-content .text-gray-700 {
+  color: #374151 !important;
+}
+
+/* Notification and alert text */
+.notification-text,
+.alert-text {
+  color: #111827 !important;
+  font-weight: 500;
+}
+
+/* Light theme specific improvements */
+.text-purple-600 {
+  color: #9333ea !important;
+}
+
+.text-purple-700 {
+  color: #7c3aed !important;
+}
+
+.text-blue-600 {
+  color: #2563eb !important;
+}
+
+.text-green-600 {
+  color: #16a34a !important;
+}
+
+.text-orange-600 {
+  color: #ea580c !important;
+}
+
+.text-red-600 {
+  color: #dc2626 !important;
+}
+
+/* Ensure proper contrast in light mode */
+.bg-purple-100 {
+  background-color: #f3e8ff !important;
+}
+
+.bg-blue-100 {
+  background-color: #dbeafe !important;
+}
+
+.bg-green-100 {
+  background-color: #dcfce7 !important;
+}
+
+.bg-orange-100 {
+  background-color: #fed7aa !important;
+}
+
+.bg-red-100 {
+  background-color: #fee2e2 !important;
+}
+
+/* Fix for navigation and header text visibility */
+.nav-text {
+  color: #374151 !important;
+}
+
+/* Ensure button text is always visible */
+button {
+  color: inherit;
+}
+
+.btn-primary {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: #ffffff;
+}
+
+/* Dark mode support - only apply when .dark class is present */
+.dark {
+  color-scheme: dark;
+}
+
+/* Dark mode overrides */
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.dark .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+.dark .text-gray-800 {
+  color: #f3f4f6 !important;
+}
+
+.dark .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+.dark .bg-white {
+  background-color: #1f2937 !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: #111827 !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+.dark .bg-gray-200 {
+  background-color: #374151 !important;
+}
+
+.dark .border-gray-200 {
+  border-color: #374151 !important;
+}
+
+.dark .border-gray-300 {
+  border-color: #4b5563 !important;
+}
+
+/* Dark mode insight card overrides */
+.dark .bg-blue-50 {
+  background-color: rgba(30, 58, 138, 0.2) !important;
+}
+
+.dark .bg-orange-50 {
+  background-color: rgba(154, 52, 18, 0.2) !important;
+}
+
+.dark .bg-green-50 {
+  background-color: rgba(20, 83, 45, 0.2) !important;
+}
+
+.dark .bg-yellow-50 {
+  background-color: rgba(146, 64, 14, 0.2) !important;
+}
+
+.dark .bg-purple-50 {
+  background-color: rgba(88, 28, 135, 0.2) !important;
+}
+
+.dark .border-blue-200 {
+  border-color: #1e3a8a !important;
+}
+
+.dark .border-orange-200 {
+  border-color: #ea580c !important;
+}
+
+.dark .border-green-200 {
+  border-color: #16a34a !important;
+}
+
+.dark .border-yellow-200 {
+  border-color: #d97706 !important;
+}
+
+.dark .border-purple-200 {
+  border-color: #7c3aed !important;
+}
+
+/* Dark mode hover states */
+.dark .hover\:bg-gray-50:hover {
+  background-color: #374151 !important;
+}
+
+.dark .hover\:bg-gray-100:hover {
+  background-color: #4b5563 !important;
+}
+
+.dark .hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Dark mode input overrides */
+.dark input[type="text"],
+.dark input[type="email"],
+.dark input[type="password"],
+.dark input[type="number"],
+.dark textarea,
+.dark select {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: #f9fafb !important;
+}
+
+.dark input[type="text"]:focus,
+.dark input[type="email"]:focus,
+.dark input[type="password"]:focus,
+.dark input[type="number"]:focus,
+.dark textarea:focus,
+.dark select:focus {
+  background-color: #374151 !important;
+  border-color: #8b5cf6 !important;
+  color: #f9fafb !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Dark mode button hover states */
+.dark .hover\:text-gray-600:hover {
+  color: #d1d5db !important;
+}
+
+.dark .hover\:text-gray-700:hover {
+  color: #f3f4f6 !important;
+}
+
+.dark .hover\:text-gray-800:hover {
+  color: #f9fafb !important;
+}
+
+/* Dark mode chart overrides */
+.dark .recharts-cartesian-grid line {
+  stroke: #4b5563 !important;
+}
+
+.dark .recharts-text {
+  fill: #d1d5db !important;
+}
+
+/* Dark mode insight card overrides */
+.dark .insight-card {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+.dark .insight-card .bg-white {
+  background-color: #374151 !important;
+}
+
+.dark .insight-card .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+.dark .insight-card .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+/* Dark mode tag and badge overrides */
+.dark .bg-white.bg-opacity-80 {
+  background-color: rgba(55, 65, 81, 0.8) !important;
+}
+
+.dark .bg-white.bg-opacity-60 {
+  background-color: rgba(55, 65, 81, 0.6) !important;
+}
+
+/* Dark mode scrollbar overrides */
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Dark mode enhanced text visibility */
+.dark .query-stats .text-gray-500,
+.dark .query-stats .text-gray-600 {
+  color: #d1d5db !important;
+  font-weight: 500;
+}
+
+/* Dark mode stats cards */
+.dark .stats-card h2,
+.dark .stats-card .text-2xl {
+  color: #f9fafb !important;
+  font-weight: 700;
+}
+
+.dark .stats-card .text-sm {
+  color: #9ca3af !important;
+  font-weight: 500;
+}
+
+/* Dark mode modal and overlay */
+.dark .bg-black.bg-opacity-50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Dark mode card content */
+.dark .card-content h3,
+.dark .card-content h4,
+.dark .card-content .font-semibold,
+.dark .card-content .font-medium {
+  color: #f9fafb !important;
+}
+
+/* Dark mode specific fixes */
+.dark .user-profile-content .text-gray-700,
+.dark .query-history-content .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+.dark .notification-text,
+.dark .alert-text {
+  color: #f9fafb !important;
+  font-weight: 500;
+}
+
+/* Dark mode color overrides for better contrast */
+.dark .text-purple-600 {
+  color: #a855f7 !important;
+}
+
+.dark .text-purple-700 {
+  color: #9333ea !important;
+}
+
+.dark .text-blue-600 {
+  color: #3b82f6 !important;
+}
+
+.dark .text-green-600 {
+  color: #22c55e !important;
+}
+
+.dark .text-orange-600 {
+  color: #f97316 !important;
+}
+
+.dark .text-red-600 {
+  color: #ef4444 !important;
+}
+
+.dark .bg-purple-100 {
+  background-color: rgba(168, 85, 247, 0.2) !important;
+}
+
+.dark .bg-blue-100 {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+}
+
+.dark .bg-green-100 {
+  background-color: rgba(34, 197, 94, 0.2) !important;
+}
+
+.dark .bg-orange-100 {
+  background-color: rgba(249, 115, 22, 0.2) !important;
+}
+
+.dark .bg-red-100 {
+  background-color: rgba(239, 68, 68, 0.2) !important;
+}
+
+/* Dark mode navigation */
+.dark .nav-text {
+  color: #e5e7eb !important;
+}
+
+/* Dark mode buttons */
+.dark .btn-primary {
+  background-color: #8b5cf6;
+  color: #ffffff;
+}
+
+.dark .btn-secondary {
+  background-color: #6b7280;
+  color: #ffffff;
+}
