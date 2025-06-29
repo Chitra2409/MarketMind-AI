@@ -833,7 +833,7 @@ Special thanks to the product manager whose casual conversation in the office pa
 
 **Built with ❤️ by the MarketMind AI Team**
 
-[🌐 Website](https://marketmind-ai.netlify.app) • [📧 Contact](mailto:hello@marketmind-ai.com) • [🐦 Twitter](https://twitter.com/marketmind_ai) • [💼 LinkedIn](https://linkedin.com/company/marketmind-ai)
+[🌐 Website](https://market-mind-ai.netlify.app/)
 
 ⭐ **Star this repo if you find it helpful!** ⭐
 
