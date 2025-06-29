@@ -1,9 +1,5 @@
 # 🧠 MarketMind AI – Multi-Agent Research Platform
 
-<div align="center">
-
-![MarketMind AI Logo](public/image.png)
-
 **Revolutionizing Market Research with AI-Powered Multi-Agent Intelligence**
 
 [![Built with React](https://img.shields.io/badge/Built%20with-React-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
