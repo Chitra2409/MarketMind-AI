@@ -7,7 +7,7 @@
 [![Powered by Supabase](https://img.shields.io/badge/Powered%20by-Supabase-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
 [![Deployed on Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://netlify.com/)
 
-[🚀 Live Demo](https://marketmind-ai.netlify.app) • [📖 Documentation](MARKETMIND_AI_DOCUMENTATION.md) • [🐛 Report Bug](https://github.com/your-username/marketmind-ai/issues) • [💡 Request Feature](https://github.com/your-username/marketmind-ai/issues)
+[🚀 Live Demo](https://market-mind-ai.netlify.app/) 
 
 </div>
 
